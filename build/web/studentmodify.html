@@ -1,0 +1,67 @@
+<html>
+<head>
+<style>
+
+h1 {
+  	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+  	font-weight:700;
+  	font-style:italic;
+}
+
+.form {
+	
+  	float: left;
+}
+
+.border {
+ 	 border: 2px solid #009;
+  	-webkit-border-radius: 10px;
+  	-moz-border-radius: 10px;
+  	border-radius: 10px;
+  	-webkit-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.75);
+  	-moz-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.75);
+  	box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.75);
+}
+
+</style>
+</head>
+<body>
+<form action="detailsModServlet">
+    <fieldset>
+     <legend><h2>User Details</h2></legend>
+        
+          <table width="40%" cellspacing="10px">
+ 	<tr>
+	    <td><label>NAME</label></td>
+	    <td><input type="text" name="name" /></td>
+	</tr>
+	<tr>
+	    <td><label>Password</label></td>
+	    <td><input type="text" name="mpass" /></td>
+	</tr>
+	<tr>
+	    <td><label>Email</label></td>
+	    <td><input type="text" name="memail" /></td>
+	</tr>
+	<tr>
+	    <td><label>College</label></td>
+	    <td><input type="text" name="mcollege" /></td>
+	</tr>
+	<tr>
+	    <td><label>Security Question</label></td>
+            <td><select name="secq">
+                    <option value="petname">PET NAME</option>
+                    <option value="bookname">FAVORITE BOOK</option>
+                </select>
+            </td>
+	</tr>
+	<tr>
+	    <td><label>Security Answer</label></td>
+	    <td><input type="text" name="seca" /></td>
+	</tr>
+    </table> 
+     <input type="submit" value="MODIFY"/>
+    </fieldset>
+  </form>
+</body>
+</html>

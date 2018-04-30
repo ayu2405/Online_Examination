@@ -1,0 +1,75 @@
+<html>
+<head>
+<style>
+
+h1 {
+  	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+  	font-weight:700;
+  	font-style:italic;
+}
+
+.form {
+	
+  	float: left;
+}
+
+.border {
+ 	 border: 2px solid #009;
+  	-webkit-border-radius: 10px;
+  	-moz-border-radius: 10px;
+  	border-radius: 10px;
+  	-webkit-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.75);
+  	-moz-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.75);
+  	box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.75);
+}
+
+</style>
+</head>
+<body>
+<form action="weAddQuest" method="post">
+    <fieldset>
+     <legend><h2>Add Question</h2></legend>
+        
+          <table width="40%" cellspacing="10px">
+ 	<tr>
+	    <td><label>Enter Question:</label></td>
+	    <td><textarea rows="15" cols="45" name="quest" placeholder="Enter Question" required /></textarea></td>
+	</tr>
+	<tr>
+	    <td><label>Option 1:</label></td>
+	    <td><input type="text" name="op1" placeholder="Enter Option 1" required /></td>
+	</tr>
+	<tr>
+	    <td><label>Option 2:</label></td>
+	    <td><input type="text" name="op2" placeholder="Enter Option 2" required /></td>
+	</tr>
+	<tr>
+	    <td><label>Option 3:</label></td>
+	    <td><input type="text" name="op3" placeholder="Enter Option 3" required /></td>
+	</tr>
+	<tr>
+	    <td><label>Option 4:</label></td>
+	    <td><input type="text" name="op4" placeholder="Enter Option 4" required /></td>
+	</tr>
+	<tr>
+	    <td><label>Answer:</label></td>
+	    <td><input type="text" name="ans" placeholder="Enter Answer" required /></td>
+	</tr>
+	<tr>
+	    <td><label>TAG</label></td>
+            <td><input type="text" name="tg1" placeholder="Enter Answer" required /></td>
+        </tr>
+        <tr>
+            <td><label>TAG</label></td>
+            <td><input type="text" name="tg2" placeholder="Enter Answer" required /></td>
+	</tr>
+	<tr>
+	    <td colspan="2">
+		<center>	<input type="submit" name="" value="ADD QUESTION">	</center>
+	    </td>	    
+	</tr>
+          </table>      
+    </fieldset>
+  </form>
+</body>
+</html>
